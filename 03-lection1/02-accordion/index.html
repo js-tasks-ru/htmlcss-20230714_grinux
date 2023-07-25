@@ -6,13 +6,33 @@
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
+      <div class="accordion">
+        <details class="accordion__item">
+            <summary class="accordion__summary">
                 Accordion item
             </summary>
-            <p>
+            <p class="accordion__content">
+                Hidden content<br>
+                Hidden content<br>
                 Hidden content
             </p>
         </details>
+        <details class="accordion__item">
+          <summary class="accordion__summary">
+              Accordion item
+          </summary>
+          <p class="accordion__content">
+              Hidden content
+          </p>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+            Accordion item
+        </summary>
+        <p class="accordion__content">
+            Hidden content
+        </p>
+    </details>
+      </div>
     </body>
 </html>
