@@ -1,0 +1,7 @@
+.navigation {
+  height: 37px;
+}
+
+.navigation__item {
+  display: inline-block;
+}

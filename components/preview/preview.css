@@ -1,0 +1,11 @@
+.preview {
+  background: #F9FAFC;
+}
+
+.preview__inner {
+  padding: 68px 0px 92px 0px;
+  display: inline-block;
+  font-size: 0;
+  margin: -15px;
+  /* max-width: 1110px; */
+}
