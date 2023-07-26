@@ -33,11 +33,7 @@
  
 }
 
-.accordion__item > p {
-  display: none
-}
-
-.accordion__item[open] > p{
+.accordion__item[open] .accordion__content {
   display: block;
   margin-top: 16px;
   margin-bottom: 8px;
