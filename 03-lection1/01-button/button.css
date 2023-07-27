@@ -41,8 +41,5 @@
 
 button[disabled] {
   opacity: 0.5;
-}
-
-button[disabled]:hover {
-  cursor: not-allowed;
+  pointer-events: none;
 }
