@@ -1,0 +1,17 @@
+.preview {
+  background: #F9FAFC;
+  overflow: hidden; /* чтобы не появлялся горизонтальный scroll при 
+                        отрицательном margin у preview__inner */
+}
+
+.preview__inner {
+  padding: 68px 0px 92px 0px;
+  display: inline-block;
+  font-size: 0;
+  margin: -15px;
+}
+
+.preview__card {
+  display: inline-block;
+  margin: 15px;
+}
