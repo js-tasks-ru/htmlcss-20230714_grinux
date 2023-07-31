@@ -55,21 +55,21 @@
 .histogram__data_small {
   flex-grow: 1;
   width: 1px;
-  height: 10px;
+  height: 33%;
   background: var(--blue);
 }
 
 .histogram__data_medium {
   flex-grow: 1;
   width: 1px;
-  height: 25px;
+  height: 66%;
   background: var(--blue);
 }
 
 .histogram__data_large {
   flex-grow: 1;
   min-width: 1px;
-  height: 50px;
+  height: 100%;
   background: var(--blue);
 }
 
