@@ -1,6 +1,4 @@
 .histogram {
-  min-width: 354px;
-  width:fit-content;
   border: 1px solid var(--grey-3);
   border-radius: 12px;
   padding: 16px 24px 24px 24px;
@@ -23,6 +21,7 @@
 
 .histogram__link {
     margin-top: 3px; /*16 padding parent + 3 ours = 19*/
+    margin-left: 20px;
     text-align: right;
     color: var(--blue);
     text-decoration: none;
