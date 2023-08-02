@@ -34,6 +34,13 @@
     --button-text: var(--white);
     
     --card-background: #2124290D;
+
+    --modal: var(--white);
+    --modal-title: #334D6E;
+    --modal-text: (--grey-4);
+    --modal-dim: #C4C4C4;
+    --modal-opacity: 50%;
+
 }
 
 body {
