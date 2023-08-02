@@ -1,16 +1,9 @@
 .tooltip {
   position: relative;
-}
-
-.tooltip__trigger {
   display: inline-block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .tooltip__bubble {
-  height: 45px;
   white-space: nowrap;
   box-sizing: border-box;
   border-radius: 10px;
@@ -25,16 +18,18 @@
   box-shadow: 0px 2px 4px 0px #2124290D;
   padding: 13px 21px 8px 21px;
   position: absolute;
-  bottom: 8px;
+  bottom:calc(100% + 8px); /*space for arrow*/
   left: 50%;
   transform: translateX(-50%);
 }
 
 .tooltip__arrow {
+  display: flex;
+  align-items: flex-start;
   box-sizing: border-box;
   position: absolute;
   left: 50%;
-  bottom: -12px;
+  top: 100%;
   transform: translateX(-50%);
 }
 
