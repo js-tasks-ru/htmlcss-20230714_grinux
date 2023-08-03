@@ -1,10 +1,4 @@
 .page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
-
-  .page__main {
-    flex-grow: 1;
-  }
-  
