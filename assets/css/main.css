@@ -40,6 +40,10 @@
     --calendar-range-background: rgba(160, 177, 245, .2);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  min-height: 100vh;
 }
