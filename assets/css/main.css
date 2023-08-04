@@ -35,11 +35,11 @@
     
     --card-background: #2124290D;
 
-    --modal: var(--white);
+    --modal-background: var(--white);
     --modal-title: #334D6E;
     --modal-text: (--grey-4);
-    --modal-dim: #C4C4C4;
-    --modal-opacity: 50%;
+    --modal-width: 25vw;
+    --modal-page-dim: rgba(196, 196, 196, 0.5);
 
 }
 

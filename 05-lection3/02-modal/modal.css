@@ -1,14 +1,21 @@
 .modal {
-  position: fixed;
-  width: 25%;
-  background: var(--modal);
+  display: none;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: var(--modal-page-dim);
+}
+
+.modal__window {
+  position:fixed;
+  width: var(--modal-width);
+  background: var(--modal-background);
   box-sizing: border-box;
   border-radius: 8px;
   padding: 30px 40px 33px 40px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
   font-family: Inter;
   line-height: 24px;
 }
@@ -28,20 +35,6 @@
   letter-spacing: 0em;
   text-align: left;
   color: var(--modal-text);
-}
-
-.modal__back {
-  position:fixed;
-  top:0;
-  left:0;
-  height: 100%;
-  width: 100%;
-  background: var(--modal-dim);
-  opacity: 50%;
-}
-
-.modal[style="display: none;"] ~ .modal__back {
-  opacity: 0%;
 }
 
 .modal__close {
