@@ -3,8 +3,9 @@
 }
 
 .preview__card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 68px 0px 92px 0px;
-}
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3333% - 15px));
+    grid-template-rows: repeat(auto-fill, minmax(350px, auto));
+    gap: 30px;
+    padding: 68px 0px 92px 0px;
+  }
