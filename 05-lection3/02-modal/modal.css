@@ -1,13 +1,13 @@
 .modal {
   display: none;
-  position: relative;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background: var(--modal-page-dim);
 }
 
 .modal__window {
-  position:fixed;
+  position:relative;
   width: var(--modal-width);
   background: var(--modal-background);
   box-sizing: border-box;
