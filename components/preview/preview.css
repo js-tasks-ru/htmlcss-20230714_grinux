@@ -2,7 +2,7 @@
   background: #F9FAFC;
 }
 
-.preview__card {
+.preview__cards {
     display: grid;
     grid-template-columns: repeat(3, calc(33.3333% - 15px));
     grid-template-rows: repeat(auto-fill, minmax(350px, auto));

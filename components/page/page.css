@@ -4,7 +4,7 @@
   grid-template-areas: "header" "main" "footer";
 }
 
-.page__inner {
+.page_inner {
   background: var(--page-inner);
 }
 
@@ -12,17 +12,4 @@
   display: grid;
   grid-template-columns: minmax(min-content, 20.6%) 1fr;
   grid-column-gap: 56px;
-}
-
-.page__footer {
-  grid-area: footer;
-  padding-top: 56px;
-  padding-bottom: 56px;
-  font-family: Inter;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: var(--grey-3);
 }
