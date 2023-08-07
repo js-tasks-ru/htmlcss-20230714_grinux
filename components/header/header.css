@@ -2,8 +2,20 @@
   background: var(--white);
 }
 
+.header_page {
+  background: var(--grey-0);
+  margin-bottom: 60px;
+  grid-area: header;
+}
+
+.header__top {
+  margin-top:24px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__title {
-  margin: 96px 0 40px 0px;
+  margin: 38px 0 40px 0px;
   font-family: Inter;
   font-size: 50px;
   font-weight: 500;

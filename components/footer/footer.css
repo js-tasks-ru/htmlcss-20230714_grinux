@@ -24,3 +24,16 @@
     text-align: center;
     letter-spacing: 0em;
   }
+
+  .footer__page {
+    grid-area: footer;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--grey-3);
+  }
