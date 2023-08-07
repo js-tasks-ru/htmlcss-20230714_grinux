@@ -6,6 +6,12 @@
   white-space: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__item {
   display: flex;
   flex-direction: column;

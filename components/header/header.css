@@ -31,4 +31,8 @@
     font-weight: 400;
     line-height: 38px;
   }
+
+  .header_page {
+    margin-bottom: 0;
+  }
 }
