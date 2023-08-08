@@ -1,10 +1,15 @@
 .card {
-  flex-shrink: 0;
+  display: flex;
   box-sizing: border-box;
   border: 1px solid var(--grey-4);
-  width: 350px;
   height: 367px;
   background: var(--grey-2);
   border-radius: 12px;
   box-shadow: 0px 2px 4px 0px var(--card-background);  
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 231px;
+  }
 }

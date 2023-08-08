@@ -1,4 +1,11 @@
 .container {
   max-width: 1110px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1142px) { /*1110 + 16*2 */
+  .container {
+    padding: 0 16px;
+  }
 }
