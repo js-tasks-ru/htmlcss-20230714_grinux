@@ -9,3 +9,11 @@
     gap: 30px;
     padding: 68px 0px 92px 0px;
   }
+
+  @media screen and (max-width: 768px) {
+    .preview__cards {
+      grid-template-columns: repeat(2, calc(50% - 15px));
+      grid-template-rows: repeat(auto-fill, 231px);
+      padding: 24px 0px;
+    }
+  }

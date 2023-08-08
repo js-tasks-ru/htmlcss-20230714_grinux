@@ -13,3 +13,10 @@
   grid-template-columns: minmax(min-content, 20.6%) 1fr;
   grid-column-gap: 56px;
 }
+
+@media screen and (max-width: 768px) {
+  .page__main {
+    display: block;
+    margin: 0 -16px; /* из-за padding 16px в контейнере*/
+  }
+}
