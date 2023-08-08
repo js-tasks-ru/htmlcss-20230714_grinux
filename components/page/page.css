@@ -1,10 +1,22 @@
 .page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
 
+.page_inner {
+  background: var(--page-inner);
+}
+
+.page__main {
+  display: grid;
+  grid-template-columns: minmax(min-content, 20.6%) 1fr;
+  grid-column-gap: 56px;
+}
+
+@media screen and (max-width: 768px) {
   .page__main {
-    flex-grow: 1;
+    display: block;
+    margin: 0 -16px; /* из-за padding 16px в контейнере*/
   }
-  
+}
