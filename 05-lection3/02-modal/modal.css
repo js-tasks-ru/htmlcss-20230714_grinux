@@ -7,7 +7,7 @@
 }
 
 .modal__window {
-  position:relative;
+  position: relative;
   width: var(--modal-width);
   background: var(--modal-background);
   box-sizing: border-box;
@@ -38,6 +38,8 @@
 }
 
 .modal__close {
+  width: 9.33px;
+  height: 9.33px;
   position: absolute;
   top: 12px;
   right: 12px;
