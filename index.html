@@ -27,36 +27,48 @@
               
             </div>
             <h1 class="header__title">Reusable component library</h1>
-            <div class="navigation">
-              <div class="navigation__item">
-                <a href="/">All components</a>
-              </div>
-              <div class="navigation__item">
-                <a href="/elements">Elements</a>
-              </div>
-              <div class="navigation__item">
-                <a href="/containers">Containers</a>
-              </div>
-              <div class="navigation__item">
-                <a href="/templates">Templates</a>
-              </div>
-            </div>
           </div>
         </header>
-        <main class="preview">
-          <div class="container">
-            <div class="preview__cards">
-              <div class="card">
+        <main class="tabs">
+          <div class="tabs__scroller">
+            <div class="container">
+              <input type="radio" name="nav-tab" id="#all-tab" checked>
+              <label class="tabs__label" for="#all-tab">All components</label>
+              <input type="radio" name="nav-tab" id="#complex-tab">
+              <label class="tabs__label" for="#complex-tab">Complex</label>
+              <input type="radio" name="nav-tab" id="#simple-tab">
+              <label class="tabs__label" for="#simple-tab">Simple</label>
+            </div>
+          </div>
+          <div class="tabs__content">
+            <div class="container">
+              <div class="tabs__preview tabs__content_complex">
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
               </div>
-              <div class="card">
-              </div>
-              <div class="card">
-              </div>
-              <div class="card">
-              </div>
-              <div class="card">
-              </div>
-              <div class="card">
+              <div class="tabs__preview tabs__content_simple">
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
               </div>
             </div>
           </div>
