@@ -61,18 +61,20 @@
     cursor: default;
   }
 
-.toggler__input:checked~.toggler__state {
-  .toggler__control {
-    border-color: var(--blue);
-    background: var(--blue);
-  }
-  .toggler__icon {
-    left:auto;
-    right: 0;
-    border-color: var(--blue);
-    background: var(--white);
-  }
+.toggler__input:checked~.toggler__state 
+.toggler__control {
+  border-color: var(--blue);
+  background: var(--blue);
 }
+
+.toggler__input:checked~.toggler__state
+.toggler__icon {
+  left: auto;
+  right: 0;
+  border-color: var(--blue);
+  background: var(--white);
+}
+
 .toggler__input:focus ~.toggler__state 
 .toggler__title {
   text-decoration: underline;
