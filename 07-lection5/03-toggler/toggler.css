@@ -49,17 +49,21 @@
   background: var(--grey-2);
 }
 
-.toggler__input:disabled ~ .toggler__state {
-    .toggler__control {
-      background: var(--grey-2);
-    }
-    .toggler__icon {
-      border-color: var(--grey-2);
-      background: var(--grey-3);
-      opacity: 25%;
-    }
-    cursor: default;
-  }
+.toggler__input:disabled~.toggler__state 
+.toggler__control {
+  background: var(--grey-2);
+}
+
+.toggler__input:disabled~.toggler__state 
+.toggler__icon {
+  border-color: var(--grey-2);
+  background: var(--grey-3);
+  opacity: 25%;
+}
+
+.toggler__input:disabled~.toggler__state {
+  cursor: default;
+}
 
 .toggler__input:checked~.toggler__state 
 .toggler__control {
