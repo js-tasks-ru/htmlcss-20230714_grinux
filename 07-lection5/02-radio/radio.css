@@ -57,12 +57,13 @@
     cursor: default;
   }
 
-.radio__input:checked~.radio__state {
-  .radio__control {
-    border-width: 2px;
-    border-color: var(--blue);
-  }
-  .radio__icon {
-    background: var(--blue);
-  }
+.radio__input:checked~.radio__state 
+.radio__control {
+  border-width: 2px;
+  border-color: var(--blue);
+}
+
+.radio__input:checked~.radio__state 
+.radio__icon {
+  background: var(--blue);
 }
