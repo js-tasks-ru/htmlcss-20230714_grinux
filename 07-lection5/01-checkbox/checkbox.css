@@ -41,17 +41,20 @@
   height: 13px;
 }
 
-.checkbox__input:disabled ~ .checkbox__state {
-    .checkbox__control {
-      background: var(--grey-2);
-    }
-    .checkbox__title {
-      color: var(--grey-2);
-    }
-    .checkbox__icon {
-      display: none;
-    }
-  }
+.checkbox__input:disabled ~ .checkbox__state 
+.checkbox__control {
+  background: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .checkbox__state
+.checkbox__title {
+  color: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .checkbox__state
+.checkbox__icon {
+  display: none;
+}
 
 .checkbox__input:checked ~ .checkbox__state 
 .checkbox__control {
