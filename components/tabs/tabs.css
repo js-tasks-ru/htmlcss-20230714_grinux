@@ -5,7 +5,7 @@
   padding-bottom: 13px;
 }
 
-.tabs__scroller>div:first-child {
+.tabs__menu {
   position: relative;
   display: flex;
   gap: 40px;
