@@ -31,21 +31,17 @@
   display: none;
 }
 
-.text-input_invalid {
-  .text-input__input {
-    border-color: var(--red);
-  }
-  .text-input__icon {
-    content: "";
-    color: var(--red);
-    display: block;
-    /* background-size: cover; Хотел установливать иконку так.
-    Но она не отображается. Почему?
-    background: url("../../assets/images/icons-sprite.svg#error") center no-repeat; */
-  }
+.text-input_invalid .text-input__input {
+  border-color: var(--red);
 }
 
-.text-input_success .text-input__icon {
+.text-input_invalid .text-input__icon_error {
+  content: "";
+  color: var(--red);
+  display: block;
+}
+
+.text-input_success .text-input__icon_success {
   content: "";
   color: #374FC7;
   display: block;
