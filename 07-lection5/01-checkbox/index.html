@@ -5,7 +5,28 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
-    <body>
-
+    <body style="display: flex; gap: 50px; justify-content:center; align-items:center;">
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input">
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="checkbox__icon" viewBox="0 0 15 13" fill="none">
+              <use href="../../assets/images/icons-sprite.svg#checkbox">
+            </svg>
+          </div>
+          <div class="checkbox__title">Default</div>
+        </div>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" class="checkbox__input" disabled>
+        <div class="checkbox__state">
+          <div class="checkbox__control">
+            <svg class="checkbox__icon" viewBox="0 0 15 13" fill="none">
+              <use href="../../assets/images/icons-sprite.svg#checkbox">
+            </svg>
+          </div>
+          <div class="checkbox__title">Default</div>
+        </div>
+      </label>
     </body>
 </html>
