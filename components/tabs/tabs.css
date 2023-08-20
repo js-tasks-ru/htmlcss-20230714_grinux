@@ -11,14 +11,6 @@
   gap: 40px;
 }
 
-.tabs__scroller input {
-  display: none;
-}
-
-.tabs__scroller input:checked+.tabs__label {
-  color: var(--black);
-}
-
 .tabs__label {
   position: relative;
   font-family: Inter;
@@ -30,7 +22,21 @@
   color: var(--grey-3);
 }
 
-.tabs__scroller input:checked+.tabs__label:after {
+.tabs input {
+  display: none;
+}
+
+input[id='#all-tab']:checked~.tabs__scroller .tabs__label[for='#all-tab'],
+input[id='#complex-tab']:checked~.tabs__scroller .tabs__label[for='#complex-tab'],
+input[id='#simple-tab']:checked~.tabs__scroller .tabs__label[for='#simple-tab']
+{
+  color: var(--black);
+}
+
+input[id='#all-tab']:checked~.tabs__scroller .tabs__label[for='#all-tab']:after,
+input[id='#complex-tab']:checked~.tabs__scroller .tabs__label[for='#complex-tab']:after,
+input[id='#simple-tab']:checked~.tabs__scroller .tabs__label[for='#simple-tab']:after 
+{
   content: "";
   position: absolute;
   display: block;
@@ -38,6 +44,12 @@
   width: 100%;
   top: calc(100% + 8px);
   background-color: var(--black);
+}
+
+input[id='#complex-tab']:checked~.tabs__content .tabs__element:not(.tabs__element_complex),
+input[id='#simple-tab']:checked~.tabs__content .tabs__element:not(.tabs__element_simple)
+{
+  display: none;
 }
 
 .tabs__content {
