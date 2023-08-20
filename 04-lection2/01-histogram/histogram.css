@@ -1,45 +1,60 @@
 .histogram {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
   border: 1px solid var(--grey-3);
-  border-radius: 12px;
-  padding: 16px 24px 24px 24px;
+  border-radius: 0.75em;
   box-sizing: border-box;
   font-family: Inter;
+  overflow: hidden;
 }
 
 .histogram__header {
+  position: absolute;
+  top: 8.65%;
+  left: min(24px, 6.78%);
+  right: min(24px, 6.78%);
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: var(--font-small);
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0em;
 }
 
 .histogram__title {
   text-align: left;
+  white-space: nowrap;
 }
 
 .histogram__link {
-    margin-top: 3px; /*16 padding parent + 3 ours = 19*/
-    margin-left: 20px;
+    margin-top: 0.1875em; /*16 padding parent + 3 ours = 19*/
+    margin-left: 1.25em;
     text-align: right;
     color: var(--blue);
     text-decoration: none;
   }
 
 .histogram__value {
-  margin-top: 6px;
-  font-size: 20px;
+  position: absolute;
+  top: 24.86%;
+  left: min(24px, 6.78%);
+  font-size: var(--font-medium);
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.3em;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom: 39px;
 }
 
 .histogram__data {
+  position: absolute;
   display: flex;
-  height: 50px;
+  top: 60%;
+  left: min(26px, 7.34%);
+  right: min(29px, 8.2%);
+  height: 27.3%;
   color: var(--blue);
   gap: 1px;
   align-items:flex-end;
@@ -63,4 +78,14 @@
   height: 100%;
 }
 
-
+@media screen and (max-width: 768px) {
+  .histogram__header {
+    font-size: calc(var(--font-small)*0.48);
+  }
+  .histogram__value {
+    font-size: calc(var(--font-medium)*0.48);
+  }
+  .histogram {
+    border-radius: calc(0.75em * 0.48);
+  }
+}

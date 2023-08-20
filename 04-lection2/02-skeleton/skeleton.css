@@ -1,38 +1,49 @@
 .skeleton {
+  position: relative;
+  height: 100%;
   box-sizing: border-box;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-  padding: 23px 40px 31px 24px;
+}
+
+.skeleton__inner {
   display: flex;
-  /* align-items: flex-start; */
   flex-wrap: wrap;
+  position: absolute;
+  top: min(32px, 16.67%);
+  bottom: min(32px,16.67%);
+  left: min(24px, 4.1%);
+  right: min(40px, 6.9%);
 }
 
 .skeleton__circle {
-  width: 64px;
-  height: 64px;
+  position: relative;
+  top: -5%;
+  align-self: stretch;
+  aspect-ratio: 1/1;
+  height: 50%;
   box-sizing: border-box;
-  border: 32px solid var(--grey-2);
-  border-radius: 32px;
-  margin-right: 16px;
+  border: 1px solid var(--grey-2);
+  border-radius: 50%;
+  background: var(--grey-2);
+  margin-right: 2.76%;
 }
 
 .skeleton__bar-set {
+  height: 50%;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 6px;
+  gap: 12.5%;
   flex-grow: 1;
 }
 
 .skeleton__bar-set + .skeleton__bar-set {
-  margin-top: 24px;
   flex-basis: 100%;
-  align-self: flex-end;
+  justify-content: flex-end;
 }
 
 .skeleton__bar {
-  height: 20px;
+  height: 31.25%;
   background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
