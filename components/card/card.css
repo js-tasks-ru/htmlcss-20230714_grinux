@@ -23,7 +23,7 @@
   pointer-events: none;
 }
 
-.card__body_buttons, .card__body_checkbox {
+.card__body_buttons {
   margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(2, 48.57%);
@@ -33,7 +33,7 @@
 }
 
 .card__body_checkbox {
-  grid-template-columns: auto auto;
+  display: grid;
   width: 100%;
   margin-top: 81px;
   gap: 16px 0;

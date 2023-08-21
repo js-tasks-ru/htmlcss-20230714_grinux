@@ -22,7 +22,6 @@
 
 .accordion__content {
   color: var(--grey-4);
-  white-space: nowrap;
 }
 
 .accordion__title {
