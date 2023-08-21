@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../05-lection3/03-calendar/calendar.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element">Avatar</a>
+              <a href="./button.html" class="menu__element">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element">Input</a>
+              <a href="./accordion.html" class="menu__element">Accordion</a>
+              <a href="./histogram.html" class="menu__element">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element">Tooltip</a>
+              <a href="./modal.html" class="menu__element">Modal</a>
+              <a href="./calendar.html" class="menu__element menu__element_active">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Calendar</div>
+            <div class="component__preview component__preview_calendar">
+              <div class="calendar">
+                <div class="calendar__title">October</div>
+                <div class="calendar__wrapper">
+                  <div class="calendar__inner calendar__inner">
+                    <div class="calendar__item calendar__item_day">Mon</div>  
+                    <div class="calendar__item calendar__item_day">Tue</div>
+                    <div class="calendar__item calendar__item_day">Wed</div>
+                    <div class="calendar__item calendar__item_day">Thu</div>
+                    <div class="calendar__item calendar__item_day">Fri</div>
+                    <div class="calendar__item calendar__item_day">Sat</div>
+                    <div class="calendar__item calendar__item_day">Sun</div>
+                    <div class="calendar__item"></div> 
+                    <div class="calendar__item"></div> 
+                    <div class="calendar__item"></div> 
+                    <div class="calendar__item">1</div> 
+                    <div class="calendar__item">2</div> 
+                    <div class="calendar__item">3</div> 
+                    <div class="calendar__item">4</div> 
+                    <div class="calendar__item">5</div> 
+                    <div class="calendar__item">6</div> 
+                    <div class="calendar__item calendar__item_selected">7</div> 
+                    <div class="calendar__item calendar__item_selected-between">8</div> 
+                    <div class="calendar__item calendar__item_selected-between">9</div> 
+                    <div class="calendar__item calendar__item_selected-between">10</div> 
+                    <div class="calendar__item calendar__item_selected-between">11</div> 
+                    <div class="calendar__item calendar__item_selected-between">12</div> 
+                    <div class="calendar__item calendar__item_selected-between">13</div> 
+                    <div class="calendar__item calendar__item_selected-between">14</div> 
+                    <div class="calendar__item calendar__item_selected-between">15</div> 
+                    <div class="calendar__item calendar__item_selected-between">16</div> 
+                    <div class="calendar__item calendar__item_selected">17</div> 
+                    <div class="calendar__item">18</div> 
+                    <div class="calendar__item">19</div> 
+                    <div class="calendar__item">20</div> 
+                    <div class="calendar__item">21</div> 
+                    <div class="calendar__item">22</div> 
+                    <div class="calendar__item">23</div> 
+                    <div class="calendar__item">24</div> 
+                    <div class="calendar__item">25</div> 
+                    <div class="calendar__item">26</div> 
+                    <div class="calendar__item">27</div> 
+                    <div class="calendar__item">28</div> 
+                    <div class="calendar__item">29</div>
+                    <div class="calendar__item">30</div>
+                    <div class="calendar__item">31</div> 
+                    <div class="calendar__item"></div>
+                    <div class="calendar__item"></div>
+                    <div class="calendar__item"></div>
+                    <div class="calendar__item"></div>
+                    <div class="calendar__item"></div>
+                    <div class="calendar__item"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+>&lt;div class="calendar"&gt;
+  &lt;div class="calendar__title"&gt;October&lt;/div&gt;
+  &lt;div class="calendar__wrapper"&gt;
+    &lt;div class="calendar__inner calendar__inner"&gt;
+      &lt;div class="calendar__item calendar__item_day"&gt;Mon&lt;/div&gt;  
+      &lt;div class="calendar__item calendar__item_day"&gt;Tue&lt;/div&gt;
+      &lt;div class="calendar__item calendar__item_day"&gt;Wed&lt;/div&gt;
+      &lt;div class="calendar__item calendar__item_day"&gt;Thu&lt;/div&gt;
+      &lt;div class="calendar__item calendar__item_day"&gt;Fri&lt;/div&gt;
+      &lt;div class="calendar__item calendar__item_day"&gt;Sat&lt;/div&gt;
+      &lt;div class="calendar__item calendar__item_day"&gt;Sun&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;1&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;2&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;3&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;4&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;5&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;6&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected"&gt;7&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;8&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;9&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;10&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;11&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;12&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;13&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;14&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;15&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected-between"&gt;16&lt;/div&gt; 
+      &lt;div class="calendar__item calendar__item_selected"&gt;17&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;18&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;19&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;20&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;21&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;22&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;23&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;24&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;25&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;26&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;27&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;28&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;29&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;30&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;31&lt;/div&gt; 
+      &lt;div class="calendar__item"&gt;&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;&lt;/div&gt;
+      &lt;div class="calendar__item"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div>
+              <div class="component__css">.calendar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid var(--grey-3);
+  font-size: var(--font-small);
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.calendar__title {
+  position: absolute;
+  top: min(28px, 8.64%);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Inter;
+  margin-bottom: 1.2em;
+  font-size: var(--font-medium);
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--calendar-item);
+}
+
+.calendar__wrapper {
+  position: absolute;
+  top: min(76px, 23.45%);
+  left: min(26px, 8.55%);
+  right: min(26px, 8.55%);
+  bottom: min(26px, 8.55%);
+}
+
+.calendar__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__item {
+  font-family: Source Sans Pro;
+  font-size: var(--font-small);
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: 0em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--calendar-item);
+}
+
+.calendar__item_day {
+  font-family: Inter;
+  font-size: var(--font-s-small);
+  font-weight: 400;
+  line-height: 1.43em;
+  letter-spacing: 0em;
+  align-items: flex-start;
+  color: var(--calendar-item-day);
+}
+
+.calendar__item_selected {
+  color: var(--white);
+  background: var(--blue);
+}
+
+.calendar__item_selected-between {
+  background: var(--calendar-range-background);
+}
+
+@media screen and (max-width: 768px) {
+  .calendar {
+    border-radius: calc(0.5em * 0.8);
+  }
+  .calendar__title {
+    font-size: calc(var(--font-medium) * 0.8);
+  }
+  .calendar__item {
+    font-size: calc(var(--font-small) * 0.8);
+  }
+  .calendar__item_day {
+    font-size: calc(var(--font-s-small) * 0.8);
+  }
+    }         </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>

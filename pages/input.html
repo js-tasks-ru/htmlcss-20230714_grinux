@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../07-lection5/04-input/input.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element">Avatar</a>
+              <a href="./button.html" class="menu__element">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element menu__element_active">Input</a>
+              <a href="./accordion.html" class="menu__element">Accordion</a>
+              <a href="./histogram.html" class="menu__element">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element">Tooltip</a>
+              <a href="./modal.html" class="menu__element">Modal</a>
+              <a href="./calendar.html" class="menu__element">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Input</div>
+            <div class="component__preview component__preview_input">
+              <div class="text-input">
+                <label class="text-input__title">LABEL</label>
+                <div class="text-input__wrapper">
+                  <input type="text" class="text-input__input" placeholder="Placeholder">
+                  <svg class="text-input__icon text-input__icon_success" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#success">
+                  </svg>
+                  <svg class="text-input__icon text-input__icon_error" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#error">
+                  </svg>
+                </div>
+              </div>
+              <div class="text-input">
+                <label class="text-input__title">FOCUS</label>
+                <div class="text-input__wrapper">
+                  <input type="text" class="text-input__input" value="Filled Input" style="border: 1px solid var(--blue);">
+                  <svg class="text-input__icon text-input__icon_success" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#success">
+                  </svg>
+                  <svg class="text-input__icon text-input__icon_error" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#error">
+                  </svg>
+                </div>
+              </div>
+              <div class="text-input text-input_success">
+                <label class="text-input__title">SUCCESS</label>
+                <div class="text-input__wrapper">
+                  <input type="text" class="text-input__input" value="Success">
+                  <svg class="text-input__icon text-input__icon_success" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#success">
+                  </svg>
+                  <svg class="text-input__icon text-input__icon_error" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#error">
+                  </svg>
+                </div>
+              </div>
+              <div class="text-input text-input_invalid">
+                <label class="text-input__title">ERROR</label>
+                <div class="text-input__wrapper">
+                  <input type="text" class="text-input__input" value="Error">
+                  <svg class="text-input__icon text-input__icon_success" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#success">
+                  </svg>
+                  <svg class="text-input__icon text-input__icon_error" viewBox="0 0 24 24">
+                    <use href="../../assets/images/icons-sprite.svg#error">
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+>&lt;div class="text-input"&gt;
+  &lt;label class="text-input__title"&gt;&lt;/label&gt;
+  &lt;div class="text-input__wrapper"&gt;
+    &lt;input type="text" class="text-input__input" value="Filled Input" style="border: 1px solid var(--blue);"&gt;
+    &lt;svg class="text-input__icon text-input__icon_success" viewBox="0 0 24 24"&gt;
+      &lt;use href="../../assets/images/icons-sprite.svg#success"&gt;
+    &lt;/svg&gt;
+    &lt;svg class="text-input__icon text-input__icon_error" viewBox="0 0 24 24"&gt;
+      &lt;use href="../../assets/images/icons-sprite.svg#error"&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div>
+              <div class="component__css">.text-input {
+  font-size: var(--font-medium);
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.text-input__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.text-input__input {
+  width:100%;
+  padding: 0.85em 0.8em 0.65em 1.2em;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 1px solid var(--grey-2);
+  border-radius: 0.35em;
+  color: var(--grey-4);
+  outline: none;
+}
+
+.text-input__icon {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 0.8rem;
+  width: 1.2em;
+  height: 1.2em;
+  display: none;
+}
+
+.text-input_invalid .text-input__input {
+  border-color: var(--red);
+}
+
+.text-input_invalid .text-input__icon_error {
+  color: var(--red);
+  display: block;
+}
+
+.text-input_success .text-input__icon_success {
+  color: #374FC7;
+  display: block;
+}
+
+.text-input__input:focus {
+  border: 1px solid var(--blue);
+}
+
+.text-input__input::placeholder {
+  color: var(--grey-2);
+}
+
+.text-input__title {
+  font-size: 0.6em; /*12px for 20px input*/
+  margin-top: 1.06em;
+  margin-bottom: 0.417em;
+  color: var(--grey-3);
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  text-align: left;
+}             </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>

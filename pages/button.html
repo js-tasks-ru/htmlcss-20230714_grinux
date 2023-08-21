@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../03-lection1/01-button/button.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element">Avatar</a>
+              <a href="./button.html" class="menu__element menu__element_active">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element">Input</a>
+              <a href="./accordion.html" class="menu__element">Accordion</a>
+              <a href="./histogram.html" class="menu__element">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element">Tooltip</a>
+              <a href="./modal.html" class="menu__element">Modal</a>
+              <a href="./calendar.html" class="menu__element">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Button</div>
+            <div class="component__preview component__preview_button">
+              <button class="button button_preview button_primary">
+                <div class="button__text">Primary</div>
+              </button>
+              <button class="button button_preview button_primary" disabled>
+                <div class="button__text">Primary</div>
+              </button>
+              <button class="button button_preview button_secondary">
+                <div class="button__text">Secondary</div>
+              </button>
+              <button class="button button_preview button_secondary" disabled>
+                <div class="button__text">Secondary</div>
+              </button>
+              <button class="button button_preview button_alternate">
+                <div class="button__text">Alternate</div>
+              </button>
+              <button class="button button_preview button_alternate" disabled>
+                <div class="button__text">Alternate</div>
+              </button>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+>&lt;button class="button button_preview button_primary"&gt;
+  &lt;div class="button__text"&gt;Primary&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class="button button_preview button_primary" disabled&gt;
+  &lt;div class="button__text"&gt;Primary&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class="button button_preview button_secondary"&gt;
+  &lt;div class="button__text"&gt;Secondary&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class="button button_preview button_secondary" disabled&gt;
+  &lt;div class="button__text"&gt;Secondary&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class="button button_preview button_alternate"&gt;
+  &lt;div class="button__text"&gt;Alternate&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class="button button_preview button_alternate" disabled&gt;
+  &lt;div class="button__text"&gt;Alternate&lt;/div&gt;
+&lt;/button&gt;</div>
+              <div class="component__css">.button {
+  color: var(--button-text);
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1875em;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 3em;
+}
+
+.button__text {
+  margin: 0.875em auto;
+}
+
+
+.button_primary {
+  background: var(--primary);
+}
+
+.button_primary:hover {
+  background: var(--primary-hover);
+}
+
+.button_secondary {
+  background: var(--secondary);
+}
+
+.button_secondary:hover {
+  background: var(--secondary-hover);
+}
+
+.button_alternate {
+  color: var(--grey-4);
+  background: none;
+  border: 1px solid var(--grey-3);
+}
+
+.button_alternate:hover {
+  border: 1px solid var(--grey-4);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 12px;
+  }
+}             </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>

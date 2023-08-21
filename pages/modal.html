@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../05-lection3/02-modal/modal.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element">Avatar</a>
+              <a href="./button.html" class="menu__element">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element">Input</a>
+              <a href="./accordion.html" class="menu__element">Accordion</a>
+              <a href="./histogram.html" class="menu__element">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element">Tooltip</a>
+              <a href="./modal.html" class="menu__element menu__element_active">Modal</a>
+              <a href="./calendar.html" class="menu__element">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Modal</div>
+            <div class="component__preview component__preview_modal">
+              <div id="modal" class="modal" style="position: relative; display: block;">
+                <div class="modal__window" style="width: 50%;">
+                    <svg viewBox="0 0 14 14" id="modal-close" class="modal__close"><use href="../../assets/images/icons-sprite.svg#close"></svg>      
+                    <div class="modal__title">Modal Title</div>
+                    <div class="modal__body">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim...
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim...
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+>&lt;div id="modal" class="modal" style="position: relative; display: block;"&gt;
+  &lt;div class="modal__window" style="width: 50%;"&gt;
+      &lt;svg viewBox="0 0 14 14" id="modal-close" class="modal__close"&gt;&lt;use href="../../assets/images/icons-sprite.svg#close"&gt;&lt;/svg&gt;      
+      &lt;div class="modal__title"&gt;Modal Title&lt;/div&gt;
+      &lt;div class="modal__body"&gt;Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim...
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div>
+              <div class="component__css">.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--modal-page-dim);
+}
+
+.modal__window {
+  position: absolute;
+  width: var(--modal-width);
+  background: var(--modal-background);
+  box-sizing: border-box;
+  font-size: var(--font-small);
+  border-radius: 0.5em;
+  padding:  min(30px, 7%) min(40px, 9.3%) min(33px, 7.7%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Inter;
+  overflow: hidden;
+}
+
+.modal__title {
+  color: var(--modal-title);
+  font-size: var(--font-medium);
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  text-align: left;
+}
+
+.modal__body {
+  line-height: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--modal-text);
+  margin-top: 0.875em;
+}
+
+.modal__close {
+  width: 9.33px;
+  height: 9.33px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal__window {
+    border-radius: calc(0.5em * 0.8);
+  }
+  .modal__title {
+    font-size: calc(var(--font-medium) * 0.8);
+    line-height: calc(1.2em * 0.8);
+    margin-right: 0.8em;
+  }
+  .modal__body {
+    font-size: calc(var(--font-small) * 0.8);
+    margin-top: calc(0.875em * 0.8);
+    line-height: calc(1.5em * 0.8);
+  }
+}             </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>
