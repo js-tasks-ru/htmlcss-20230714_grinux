@@ -35,7 +35,6 @@
 }
 
 .tabs__input {
-.tabs input[name='nav-tab'] {
   display: none;
 }
 
