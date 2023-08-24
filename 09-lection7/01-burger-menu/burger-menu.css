@@ -17,15 +17,11 @@
 
 .burger-menu__close {
   position: absolute;
-  /* bottom: 50%;
-  transform: translateY(50%); */
   top: 0;
   left: -4px;
   width: 16px;
   height: 16px;
   background: var(--grey-2);
-  /* box-sizing: border-box; */
-  /* border: 16px solid var(--grey-2); */
   border: 8px solid transparent;
   border-radius: 50%;
 }
