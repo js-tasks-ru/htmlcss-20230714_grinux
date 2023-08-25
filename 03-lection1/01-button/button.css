@@ -10,10 +10,12 @@
   letter-spacing: 0em;
   text-align: center;
   height: 3em;
+  padding: 0.875em;
+  min-width: fit-content;
 }
 
 .button__text {
-  margin: 0.875em auto;
+  margin: auto;
 }
 
 
