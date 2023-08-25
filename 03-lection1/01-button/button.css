@@ -13,8 +13,6 @@
   text-align: center;
 }
 
-<<<<<<< Updated upstream
-=======
 .button:active {
   transform: translateY(2px);
 }
@@ -24,7 +22,6 @@
 }
 
 
->>>>>>> Stashed changes
 .button_primary {
   background: var(--primary);
 }
