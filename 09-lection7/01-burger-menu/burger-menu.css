@@ -1,8 +1,14 @@
 .burger-menu {
+  display: none;
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   background: var(--modal-page-dim);
+}
+
+.burger-menu[data-open] {
+  display: block;
 }
 
 .burger-menu__menu {

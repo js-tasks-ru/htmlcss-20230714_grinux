@@ -9,10 +9,13 @@
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-      <div class="burger-menu">
+      <svg id="burger-menu-open" viewBox="0 0 24 24" style="width: 24px; height: 24px;">
+        <use href="../../assets/images/icons-sprite.svg#menu">
+      </svg>
+      <div class="burger-menu" id="burger-menu">
         <div class="burger-menu__menu">
           <div class="burger-menu__header">
-            <svg class="burger-menu__close" viewBox="0 0 14 14">
+            <svg id="burger-menu-close" class="burger-menu__close" viewBox="0 0 14 14">
               <use href="../../assets/images/icons-sprite.svg#close">
             </svg>
             <svg class="burger-menu__logo" viewBox="0 0 110 32">
