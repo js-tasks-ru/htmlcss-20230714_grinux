@@ -5,7 +5,7 @@
 @import '../../components/page/page.css';
 @import '../../components/header/header.css';
 @import '../../components/navigation/navigation.css';
-@import '../../components/preview/preview.css';
+@import '../../components/tabs/tabs.css'; 
 @import '../../components/card/card.css';
 @import '../../components/footer/footer.css';
 @import '../../components/container/container.css';
@@ -43,7 +43,7 @@
     --modal-background: var(--white);
     --modal-title: #334D6E;
     --modal-text: (--grey-4);
-    --modal-width: 25vw;
+    --modal-width: 25%;
     --modal-page-dim: rgba(196, 196, 196, 0.5);
 
     --calendar-item: #334D6E;
@@ -57,6 +57,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    --font-s-small: 14px;
+    --font-small: 16px;
+    --font-medium: 20px;
 }
 
 html, body {

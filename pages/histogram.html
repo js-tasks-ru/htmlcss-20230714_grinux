@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element">Avatar</a>
+              <a href="./button.html" class="menu__element">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element">Input</a>
+              <a href="./accordion.html" class="menu__element">Accordion</a>
+              <a href="./histogram.html" class="menu__element menu__element_active">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element">Tooltip</a>
+              <a href="./modal.html" class="menu__element">Modal</a>
+              <a href="./calendar.html" class="menu__element">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Histogram</div>
+            <div class="component__preview component__preview_histogram">
+              <div class="histogram">
+                <div class="histogram__header">
+                  <div class="histogram__title">
+                    Total orders
+                  </div>
+                  <div class="histogram__link" href="/">
+                    View all
+                  </div>
+                </div>
+                <div class="histogram__value">
+                  50254
+                </div>
+                <div class="histogram__data">
+                  <div class="histogram__column histogram__column_small"></div>
+                  <div class="histogram__column histogram__column_medium"></div>
+                  <div class="histogram__column histogram__column_large"></div>
+                  <div class="histogram__column histogram__column_small"></div>
+                  <div class="histogram__column histogram__column_medium"></div>
+                  <div class="histogram__column histogram__column_large"></div>
+                  <div class="histogram__column histogram__column_small"></div>
+                  <div class="histogram__column histogram__column_medium"></div>
+                  <div class="histogram__column histogram__column_large"></div>
+                  <div class="histogram__column histogram__column_small"></div>
+                  <div class="histogram__column histogram__column_medium"></div>
+                  <div class="histogram__column histogram__column_large"></div>
+                  <div class="histogram__column histogram__column_small"></div>
+                  <div class="histogram__column histogram__column_medium"></div>
+                  <div class="histogram__column histogram__column_large"></div>
+                </div>
+              </div>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+>&lt;div class="histogram"&gt;
+  &lt;div class="histogram__header"&gt;
+    &lt;div class="histogram__title"&gt;
+      Total orders
+    &lt;/div&gt;
+    &lt;div class="histogram__link" href="/"&gt;
+      View all
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="histogram__value"&gt;
+    50254
+  &lt;/div&gt;
+  &lt;div class="histogram__data"&gt;
+    &lt;div class="histogram__column histogram__column_small"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_medium"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_large"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_small"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_medium"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_large"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_small"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_medium"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_large"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_small"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_medium"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_large"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_small"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_medium"&gt;&lt;/div&gt;
+    &lt;div class="histogram__column histogram__column_large"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</div>
+              <div class="component__css">.histogram {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border: 1px solid var(--grey-3);
+  border-radius: 0.75em;
+  box-sizing: border-box;
+  font-family: Inter;
+  overflow: hidden;
+}
+
+.histogram__header {
+  position: absolute;
+  top: 8.65%;
+  left: min(24px, 6.78%);
+  right: min(24px, 6.78%);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-small);
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0em;
+}
+
+.histogram__title {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.histogram__link {
+  margin-top: 0.1875em; /*16 padding parent + 3 ours = 19*/
+  margin-left: 1.25em;
+  text-align: right;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.histogram__value {
+  position: absolute;
+  top: 24.86%;
+  left: min(24px, 6.78%);
+  font-size: var(--font-medium);
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.histogram__data {
+  position: absolute;
+  display: flex;
+  top: 60%;
+  left: min(26px, 7.34%);
+  right: min(29px, 8.2%);
+  height: 27.3%;
+  color: var(--blue);
+  gap: 1px;
+  align-items:flex-end;
+}
+
+.histogram__column {
+  flex-grow: 1;
+  min-width: 1px;
+  background: var(--blue);
+}
+
+.histogram__column_small {
+  height: 33%;
+}
+
+.histogram__column_medium {
+  height: 66%;
+}
+
+.histogram__column_large {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .histogram__header {
+    font-size: calc(var(--font-small)*0.48);
+  }
+  .histogram__value {
+    font-size: calc(var(--font-medium)*0.48);
+  }
+  .histogram {
+    border-radius: calc(0.75em * 0.48);
+  }
+}             </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>
