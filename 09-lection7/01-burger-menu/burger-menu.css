@@ -35,6 +35,7 @@
 }
 
 .burger-menu__close {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: -4px;
