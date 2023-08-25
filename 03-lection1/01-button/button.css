@@ -13,6 +13,18 @@
   text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+.button:active {
+  transform: translateY(2px);
+}
+
+.button__text {
+  margin: auto;
+}
+
+
+>>>>>>> Stashed changes
 .button_primary {
   background: var(--primary);
 }
