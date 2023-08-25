@@ -70,8 +70,8 @@ input[id='#simple-tab']:checked~.tabs__content .tabs__element:not(.tabs__element
 
 .tabs__preview {
   display: grid;
-  grid-template-columns: repeat(3, calc(33.3333% - 15px));
-  grid-template-rows: repeat(auto-fill, minmax(350px, auto));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(350px, auto);
   gap: 30px;
   padding: 15px 0px;
 }
@@ -89,8 +89,8 @@ input[id='#simple-tab']:checked~.tabs__content .tabs__element:not(.tabs__element
     gap: 24px;
   }
   .tabs__preview {
-    grid-template-columns: repeat(2, calc(50% - 15px));
-    grid-template-rows: repeat(auto-fill, 231px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 231px;
   }
 
   .tabs__preview:first-child {
