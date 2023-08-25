@@ -1,4 +1,9 @@
 .burger-menu {
+  width: 0;
+  height: 0;
+}
+
+.burger-menu__background {
   display: none;
   position: fixed;
   top: 0;
@@ -7,20 +12,28 @@
   background: var(--modal-page-dim);
 }
 
-.burger-menu[data-open] {
-  display: block;
-}
-
 .burger-menu__menu {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: -23.4375em;
+  max-width: 23.4375em;
   width: 100%;
-  height: 100%;
-  max-width: 375px;
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 1em;
   background: #F9FAFC;
   overflow: scroll;
   white-space: nowrap;
+  transition: left 0.3s linear;
+}
+
+.burger-menu[data-open] .burger-menu__background {
+  display: block;
+}
+
+.burger-menu[data-open] .burger-menu__menu{
+  left: 0;
 }
 
 .burger-menu__menu::-webkit-scrollbar {
@@ -29,18 +42,18 @@
 
 .burger-menu__header {
   position: relative;
-  height: 32px;
+  height: 2em;
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 2em;
 }
 
 .burger-menu__close {
   cursor: pointer;
   position: absolute;
   top: 0;
-  left: -4px;
-  width: 16px;
-  height: 16px;
+  left: -0.25px;
+  width: 1em;
+  height: 1em;
   background: var(--grey-2);
   border: 8px solid transparent;
   border-radius: 50%;
@@ -48,8 +61,8 @@
 
 .burger-menu__logo {
   margin: auto;
-  width: 110px;
-  height: 32px;
+  width: 6/875em;
+  height: 2em;
 }
 
 .burger-menu__hr {
@@ -64,11 +77,11 @@
   font-family: Inter;
   font-size: var(--font-small);
   font-weight: 400;
-  line-height: 24px;
+  line-height: 2.5em;
   letter-spacing: 0em;
   flex: 1;
   justify-content: space-between;
-  margin: 25px 0px 24px;
+  margin: 1.5625em 0 1.5em;
 }
 
 .burger-menu__title {
@@ -76,10 +89,10 @@
   color: var(--grey-3);
   font-family: Inter;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.3em;
   letter-spacing: 0em;
   text-align: left;
-  margin: 24px 0 16px;
+  margin: 1.2em 0 0.8em;
 }
 
 .burger-menu__element {
@@ -88,10 +101,10 @@
   font-family: Inter;
   font-size: var(--font-small);
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0em;
   text-align: left;
-  margin: 8px 0 8px;
+  margin: 0.5em 0 0.5em;
 }
 
 .burger-menu__element_active {
@@ -108,5 +121,11 @@
 }
 
 .burger-menu__element:last-child {
-  margin-top: 56px;
+  margin-top: 3.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
 }
