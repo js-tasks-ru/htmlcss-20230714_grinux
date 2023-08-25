@@ -14,6 +14,7 @@
   padding: 16px;
   background: #F9FAFC;
   overflow: scroll;
+  white-space: nowrap;
 }
 
 .burger-menu__menu::-webkit-scrollbar {
