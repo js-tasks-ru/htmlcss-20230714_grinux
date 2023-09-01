@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../03-lection1/02-accordion/accordion.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element">Avatar</a>
+              <a href="./button.html" class="menu__element">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element">Input</a>
+              <a href="./accordion.html" class="menu__element menu__element_active">Accordion</a>
+              <a href="./histogram.html" class="menu__element">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element">Tooltip</a>
+              <a href="./modal.html" class="menu__element">Modal</a>
+              <a href="./calendar.html" class="menu__element">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Accordion</div>
+            <div class="component__preview component__preview_accordion">
+              <details class="accordion" open>
+                <summary class="accordion__summary">
+                  <div class="accordion__title">Accordion item</div>
+                  <svg class="accordion__marker" viewBox="0 0 18 10"><use href="../../assets/images/icons-sprite.svg#marker"></svg>  
+                </summary>
+                <div class="accordion__content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+              </details>
+              <details class="accordion">
+                <summary class="accordion__summary">
+                  <div class="accordion__title">Accordion item</div>
+                  <svg class="accordion__marker" viewBox="0 0 18 10"><use href="../../assets/images/icons-sprite.svg#marker"></svg>  
+                </summary>
+                <div class="accordion__content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </div>
+              </details>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+>&lt;details class="accordion" open&gt;
+  &lt;summary class="accordion__summary"&gt;
+    &lt;div class="accordion__title"&gt;Accordion item&lt;/div&gt;
+    &lt;svg class="accordion__marker" viewBox="0 0 18 10"&gt;&lt;use href="../../assets/images/icons-sprite.svg#marker"&gt;&lt;/svg&gt;  
+  &lt;/summary&gt;
+  &lt;div class="accordion__content"&gt;
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+  &lt;/div&gt;
+&lt;/details&gt;</div>;
+              <div class="component__css">.accordion {
+  display: block;
+  border: 1px solid var(--grey-3);
+  border-radius: 0.5em;
+  padding: 1.5em 2em;
+  font-family: 'Inter';
+  font-size: var(--font-small);
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0em;
+  text-align: left;
+  overflow: hidden;
+}
+
+.accordion__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--black);
+  list-style: none;
+}
+
+.accordion__content {
+  color: var(--grey-4);
+}
+
+.accordion__title {
+  flex-shrink: 0;
+}
+
+.accordion__marker {
+  width: 1em;
+  margin-left: 1em;
+  height: 0.5em;
+  flex-shrink: 0;
+}
+
+.accordion[open] .accordion__content {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.accordion[open] .accordion__marker{
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    font-size: calc(var(--font-small)*0.6);
+  }
+}           </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>

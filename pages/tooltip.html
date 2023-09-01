@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../05-lection3/01-tooltip/tooltip.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element">Avatar</a>
+              <a href="./button.html" class="menu__element">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element">Input</a>
+              <a href="./accordion.html" class="menu__element">Accordion</a>
+              <a href="./histogram.html" class="menu__element">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element menu__element_active">Tooltip</a>
+              <a href="./modal.html" class="menu__element">Modal</a>
+              <a href="./calendar.html" class="menu__element">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Tooltip</div>
+            <div class="component__preview component__preview_tooltip">
+              <div class="tooltip">
+                <svg class="tooltip__trigger" viewBox="0 0 22 22"><use href="../../assets/images/icons-sprite.svg#tooltip"></svg>
+                <div class="tooltip__bubble" style="display: block;">
+                  <div class="tooltip__text">Helper Text</div>
+                  <div class="tooltip__arrow">
+                    <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 6L0 0H14L7 6Z" fill="#4263EB"/>
+                    </svg>
+                  </div>
+                </div>   
+              </div>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+>&lt;div class="tooltip"&gt;
+  &lt;svg class="tooltip__trigger" viewBox="0 0 22 22"&gt;&lt;use href="../../assets/images/icons-sprite.svg#tooltip"&gt;&lt;/svg&gt;
+  &lt;div class="tooltip__bubble" style="display: block;"&gt;
+    &lt;div class="tooltip__text"&gt;Helper Text&lt;/div&gt;
+    &lt;div class="tooltip__arrow"&gt;
+      &lt;svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;path d="M7 6L0 0H14L7 6Z" fill="#4263EB"/&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;   
+&lt;/div&gt;</div>
+              <div class="component__css">.tooltip {
+  position: relative;
+  display: inline-block;
+  width:fit-content;
+}
+
+.tooltip__bubble {
+  display: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: var(--blue);
+  color: var(--grey-2);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px #2124290D;
+  padding: 13px 21px 8px 21px;
+  position: absolute;
+  bottom:calc(100% + 8px); /*space for arrow*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip__arrow {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+.tooltip__trigger {
+  width: 22px;
+  height: 22px;
+}
+
+.tooltip__trigger:hover~.tooltip__bubble {
+  display: block;
+}             </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -18,10 +18,6 @@
   gap: 4px;
 }
 
-.menu__item_active {
-  color: var(--menu-item-active);
-}
-
 .menu__title {
   font-family: Inter;
   font-size: 20px;
@@ -33,12 +29,18 @@
 }
 
 .menu__element {
+  text-decoration: none;
+  color:inherit;
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.menu__element_active {
+  color: var(--menu-item-active);
 }
 
 .menu__element:hover {

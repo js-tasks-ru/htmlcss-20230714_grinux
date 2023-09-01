@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="page page_inner">
+      <div class="container">
+        <div class="header header_page">
+          <div class="header__top">
+            <div class="logo">
+              <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17869_61)">
+                <rect y="1" width="30" height="30" fill="#212429"/>
+                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17869_61">
+                <rect width="110" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>            
+        </div>
+        <div class="page__main">
+          <div class="menu">
+            <div class="menu__item">
+              <div class="menu__title">Simple</div>
+              <a href="./avatar.html" class="menu__element menu__element_active">Avatar</a>
+              <a href="./button.html" class="menu__element">Button</a>
+              <a href="./checkbox.html" class="menu__element">Custom form elements</a>
+              <a href="./toggler.html" class="menu__element">Toggler</a>
+            </div>
+            <div class="menu__item">
+              <div class="menu__title">Complex</div>
+              <a href="./input.html" class="menu__element">Input</a>
+              <a href="./accordion.html" class="menu__element">Accordion</a>
+              <a href="./histogram.html" class="menu__element">Histogram</a>
+              <a href="./skeleton.html" class="menu__element">Skeleton</a>
+              <a href="./tooltip.html" class="menu__element">Tooltip</a>
+              <a href="./modal.html" class="menu__element">Modal</a>
+              <a href="./calendar.html" class="menu__element">Calendar</a>
+            </div>
+          </div>
+          <div class="component">
+            <div class="component__title">Avatar</div>
+            <div class="component__preview">
+              <div class="avatar">
+                <img class="avatar__img" src="../06-lection4/01-avatar/public/avatar-200.jpg" alt="Avatar">
+              </div>
+            </div>
+            <hr class="component__hr">
+            <div class="component__code">
+              <input type="radio" name="component-tab" id="#html-tab" checked>
+              <label class="component__label component__label_html" for="#html-tab">HTML</label>
+              <input type="radio" name="component-tab" id="#css-tab">
+              <label class="component__label component__label_css" for="#css-tab">CSS</label> 
+              <div class="component__html"
+              >&lt;div class="avatar"&gt;
+  &lt;img class="avatar__img" src="../06-lection4/01-avatar/public/avatar-200.jpg" alt="Avatar"&gt;
+&lt;/div&gt;  </div>
+              <div class="component__css">.avatar {
+  width: fit-content;
+  max-height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}             </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer footer_page">Reusable component library</div>
+      </div>
+    </div>
+  </body>
+</html>

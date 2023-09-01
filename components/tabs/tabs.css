@@ -2,6 +2,11 @@
   overflow: hidden;
 }
 
+.tabs__preview > a {
+  text-decoration: none;
+  color:inherit;
+}
+
 .tabs__scroller {
   background: var(--white);
 }
