@@ -14,7 +14,7 @@
 
 .card__body {
   position: relative;
-  width: calc(85.7%);
+  width: 85.7%;
   flex-direction: column;
   align-items: stretch;
   display: flex;
