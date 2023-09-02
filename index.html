@@ -16,6 +16,7 @@
       <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
       <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
       <link rel="stylesheet" href="./07-lection5/04-input/input.css">
+      <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
     </head>
     <body>
       <div class="page">
@@ -34,6 +35,22 @@
                   <rect width="110" height="32" fill="white"/>
                   </clipPath>
                   </defs>
+                </svg>
+              </div>
+              <div class="theme-toggler">
+                <svg class="theme-toggler__icon theme-toggler__icon_sun">
+                  <use href="../../assets/images/icons-sprite.svg#sun">
+                </svg>
+                <label class="toggler theme-toggler__toggler">
+                  <input type="checkbox" class="toggler__input" id="theme-changer">
+                  <div class="toggler__state">
+                    <div class="toggler__control">
+                      <div class="toggler__icon"></div>
+                    </div>
+                  </div>
+                </label>
+                <svg class="theme-toggler__icon theme-toggler__icon_moon">
+                  <use href="../../assets/images/icons-sprite.svg#moon">
                 </svg>
               </div>    
             </div>
