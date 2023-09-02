@@ -17,7 +17,8 @@
 }
 
 .burger-menu[data-open] .burger-menu__menu {
-  transform: translateX(100%);
+  transform: translateX(0);
+  transition: transform 0.3s linear;
 }
 
 .burger-menu__open {
@@ -36,7 +37,7 @@
   box-sizing: border-box;
   position: absolute;
   top: 0; 
-  left: -100%;
+  left: 0;
   max-width: 23.4375em;
   width: 100%;
   display: flex;
@@ -45,7 +46,8 @@
   background: #F9FAFC;
   overflow: scroll;
   white-space: nowrap;
-  transition: transform 0.3s linear;
+  transform: translateX(-100%);
+  
 }
 
 .burger-menu__menu::-webkit-scrollbar {
