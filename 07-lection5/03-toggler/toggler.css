@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: center;
   background: var(--white);
+  transition: all 0.3s linear;
 }
 
 .toggler__title {
@@ -47,6 +48,7 @@
   width: 1.625em;
   aspect-ratio: 1/1;
   background: var(--grey-2);
+  transition: all 0.3s linear;
 }
 
 .toggler__input:disabled~.toggler__state 
@@ -73,8 +75,7 @@
 
 .toggler__input:checked~.toggler__state
 .toggler__icon {
-  left: auto;
-  right: 0;
+  left: 1.625em;
   border-color: var(--blue);
   background: var(--white);
 }

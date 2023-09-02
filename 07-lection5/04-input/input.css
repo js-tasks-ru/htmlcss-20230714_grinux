@@ -21,6 +21,7 @@
   border-radius: 0.35em;
   color: var(--grey-4);
   outline: none;
+  transition: border 0.3s ease-out;
 }
 
 .text-input__icon {

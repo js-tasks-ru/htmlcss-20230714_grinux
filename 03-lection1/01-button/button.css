@@ -14,6 +14,10 @@
   min-width: fit-content;
 }
 
+.button:active {
+  transform: translateY(2px);
+}
+
 .button__text {
   margin: auto;
 }
