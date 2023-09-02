@@ -1,28 +1,42 @@
+@import "../../07-lection5/03-toggler/toggler.css";
+
 .burger-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0);
-  z-index: -1;
+  display: none;
+  width: 0;
+  height: 0;
+  z-index: 1;
 }
 
 .burger-menu[data-open] {
-  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
   background: var(--modal-page-dim);
 }
 
 .burger-menu[data-open] .burger-menu__menu {
-  transform: translateX(0);
+  transform: translateX(100%);
+}
+
+.burger-menu__open {
+  position: absolute;
+  width: 1.5em; 
+  height: 1.5em; 
+  cursor: pointer;
+}
+
+.burger-menu__open_page {
+  top: 1.25em;
+  left: 1em;
 }
 
 .burger-menu__menu {
   box-sizing: border-box;
   position: absolute;
-  z-index: 2;
   top: 0; 
-  left: 0;
+  left: -100%;
   max-width: 23.4375em;
   width: 100%;
   display: flex;
@@ -31,7 +45,6 @@
   background: #F9FAFC;
   overflow: scroll;
   white-space: nowrap;
-  transform: translateX(-100%);
   transition: transform 0.3s linear;
 }
 
