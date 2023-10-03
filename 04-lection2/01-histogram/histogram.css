@@ -1,5 +1,4 @@
 .histogram {
-  position: relative;
   height: 100%;
   width: 100%;
   border: 1px solid var(--grey-3);
@@ -7,13 +6,17 @@
   box-sizing: border-box;
   font-family: Inter;
   overflow: hidden;
+  padding: 0 min(24px, 6.78%);
+  display: flex;
+  flex-direction: column;
+}
+
+.histogram::before, .histogram::after { /*динамический top/bot padding*/
+  content: "";
+  height: min(24px, 6.78%); 
 }
 
 .histogram__header {
-  position: absolute;
-  top: 8.65%;
-  left: min(24px, 6.78%);
-  right: min(24px, 6.78%);
   display: flex;
   justify-content: space-between;
   font-size: var(--font-small);
@@ -28,7 +31,7 @@
 }
 
 .histogram__link {
-    margin-top: 0.1875em; /*16 padding parent + 3 ours = 19*/
+    margin-top: 0.1875em;
     margin-left: 1.25em;
     text-align: right;
     color: var(--blue);
@@ -36,9 +39,8 @@
   }
 
 .histogram__value {
-  position: absolute;
-  top: 24.86%;
-  left: min(24px, 6.78%);
+  margin-top: 0.3em;
+  margin-bottom: 1.95em;
   font-size: var(--font-medium);
   font-weight: 400;
   line-height: 1.3em;
@@ -47,15 +49,11 @@
 }
 
 .histogram__data {
-  position: absolute;
-  display: flex;
-  top: 60%;
-  left: min(26px, 7.34%);
-  right: min(29px, 8.2%);
-  height: 27.3%;
   color: var(--blue);
+  display: flex;
   gap: 1px;
   align-items:flex-end;
+  flex-grow: 1;
 }
 
 .histogram__column {
